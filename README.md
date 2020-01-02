@@ -14,7 +14,8 @@ with the driver already installed.
 If you want to look at the changes / install the driver yourself there is tc01.tar which contains the changed files
 and INSTALL/buildkernel which contain the commands to unpack/build the kernel.
 
- tc11-211bsd_tq.tap is a tape image containing all the files which you can attach to tq0 in simh and unpack with tar xf
+tc11-211bsd_tq.tap is a tape image containing all the files and install scripts which you can 
+attach to tq0 in simh and unpack with tar xf
 
 changes required to simh boot.ini:
 set tc enabled
