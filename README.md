@@ -47,6 +47,8 @@ newfs will read info from /etc/disktab to create a default 'a' partition spannin
 fsck is not really mandatory to run as newfs *should* have left the filesystem intact but it doesn't hurt.
 
 /tape0 behaves just like any partition (except it will be *very* slow if you are throttling simh to run at real pdp11 speed)
+Note that you really must unmount the tape before detaching/changing tapes - the fs will get very confused otherwise 
+and likely ruin the contents of the new tape.
 
 
 
