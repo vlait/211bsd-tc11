@@ -2,7 +2,7 @@
 tc11 (tu56 dectape) driver for 211bsd
 
 The driver is almost a copy of ynix v7 tc driver with minimal changes.
-There is no disktab support so the driver expects /etc/disktab to contain the correct entries 
+There is no in-kernel partition support so the driver expects /etc/disktab to contain the correct entries 
 if the tape is to be mounted.
 This would likely not work on a real pdp-11 and is really just a proof of concept to run with 
 Rene Richarz' Tu56 graphical frontend https://github.com/rricharz/Tu56
