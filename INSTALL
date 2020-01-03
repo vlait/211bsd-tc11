@@ -1,8 +1,11 @@
 #!/bin/sh
 echo "ready to install, last change to abort!!"
 read n
+curdir=`pwd`
 sh ./backuptc.sh
-tar xvf ./tc01.tar
+(cd /
+tar xvf ${curdir}/tc01.tar
+)
 (cd /dev
 rm /dev/tc0a
 rm /dev/tc1a
