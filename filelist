@@ -14,3 +14,4 @@ usr/src/sys/conf/PIDP11
 usr/src/sys/autoconfig/uprobe.c
 usr/src/sys/autoconfig/tcauto.c
 usr/src/sys/autoconfig/Makefile
+/etc/autoconfig

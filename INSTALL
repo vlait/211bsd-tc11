@@ -16,7 +16,12 @@ rm /dev/rtc1a
 ./MAKEDEV tc1
 )
 sh ./buildkernel.sh
-
+(
+cd /usr/src/sys/autoconfig
+make
+make install
+make clean
+)
 echo
 echo
 echo please reboot to finish the driver addition
