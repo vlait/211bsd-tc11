@@ -4,7 +4,7 @@ tc11 (tu56 dectape) driver for 211bsd
 
 Jan3/2020
 -updated the driver to use disklabel and autoconfig, device numbering changed so you *must* recreate the /dev/entries
--disk image not yet updated.
+
 
 The driver is almost a copy of ynix v7 tc driver with minimal changes.
 
