@@ -27,8 +27,8 @@ set tc address=17777340
 set tc vector=214
 
 .. and if you want to attach the tapes:
-attach  tc0 tu0.tu56
-attach  tc1 tu1.tu56
+attach  tc0 tu0.tu56  
+attach  tc1 tu1.tu56  
 
 The above just enables the tc driver on simh and connects the correct memory and interrupt vectors.
 
@@ -43,11 +43,11 @@ The block device entries are /dev/tcNa where N is the tape unit.
 
 To create a file system on tape0 and mount it on /tape0
 
-disklabel -w -r /dev/rtc0a tu56
-newfs -T tu56 /dev/rtc0a
-fsck -y /dev/rtc0a
-mkdir /tape0
-mount /dev/tc0a /tape0
+disklabel -w -r /dev/rtc0a tu56  
+newfs -T tu56 /dev/rtc0a  
+fsck -y /dev/rtc0a  
+mkdir /tape0  
+mount /dev/tc0a /tape0  
 
 newfs will read info from /etc/disktab to create a default 'a' partition spanning the entire tape.
 fsck is not really mandatory to run as newfs *should* have left the filesystem intact but it doesn't hurt.
