@@ -21,12 +21,12 @@ and INSTALL/buildkernel which contain the commands to unpack/build the kernel.
 tc11-211bsd_tq.tap is a tape image containing all the files and install scripts which you can 
 attach to tq0 in simh and unpack with tar xf
 
-changes required to simh boot.ini:
-set tc enabled
-set tc address=17777340
-set tc vector=214
+changes required to simh boot.ini:  
+set tc enabled  
+set tc address=17777340  
+set tc vector=214  
 
-.. and if you want to attach the tapes:
+.. and if you want to attach the tapes:  
 attach  tc0 tu0.tu56  
 attach  tc1 tu1.tu56  
 
