@@ -9,7 +9,7 @@ Jan3/2020
 -updated the driver to use disklabel and autoconfig, device numbering changed so you *must* recreate the /dev/entries
 
 
-The driver is almost a copy of ynix v7 tc driver with minimal changes.
+The driver is almost a copy of unix v7 'tc' driver with minimal changes to make it work on 2.11BSD.
 
 This would likely not work on a real pdp-11 and is really just a proof of concept to run with 
 Rene Richarz' Tu56 graphical frontend https://github.com/rricharz/Tu56
