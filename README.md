@@ -1,7 +1,7 @@
 # 211bsd-tc11
 tc11 (tu56 dectape) driver for 211bsd
 
-DEc4/2024
+Dec4/2024
 -updated disk image to 2.11BSDpl482
 -updated patch tbd (install files in the disk image in /home/tu56 though) 
 
