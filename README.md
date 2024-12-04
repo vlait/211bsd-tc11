@@ -1,6 +1,9 @@
 # 211bsd-tc11
 tc11 (tu56 dectape) driver for 211bsd
 
+DEc4/2024
+-updated disk image to 2.11BSDpl482
+-updated patch tbd (install files in the disk image in /home/tu56 though) 
 
 Jan3/2020
 -updated the driver to use disklabel and autoconfig, device numbering changed so you *must* recreate the /dev/entries
@@ -13,13 +16,13 @@ Rene Richarz' Tu56 graphical frontend https://github.com/rricharz/Tu56
 
 2.11BSD_rq.dsk.gz is a (compressed) preconfigured image  (from https://github.com/chasecovello/211bsd-pidp11/ ) 
 with the driver already installed.
-/home/tc/tu56examples contains some usage examples, most expect 2 tape files attached.
+~~/home/tc/tu56examples contains some usage examples, most expect 2 tape files attached.~~
 
-If you want to look at the changes / install the driver yourself there is tc01.tar which contains the changed files
-and INSTALL/buildkernel which contain the commands to unpack/build the kernel.
+~~If you want to look at the changes / install the driver yourself there is tc01.tar which contains the changed files
+and INSTALL/buildkernel which contain the commands to unpack/build the kernel.~~
 
-tc11-211bsd_tq.tap is a tape image containing all the files and install scripts which you can 
-attach to tq0 in simh and unpack with tar xf
+~~tc11-211bsd_tq.tap is a tape image containing all the files and install scripts which you can 
+attach to tq0 in simh and unpack with tar xf~~
 
 changes required to simh boot.ini:  
 set tc enabled  
