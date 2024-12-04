@@ -1,0 +1,17 @@
+etc/disktab
+etc/dtab
+dev/MAKEDEV
+usr/src/sys/pdpuba/tc.c
+usr/src/sys/pdp/conf.c
+usr/src/sys/pdp/scb.s
+usr/src/sys/conf/Make.nsunix
+usr/src/sys/conf/Make.pdpuba
+usr/src/sys/conf/config
+usr/src/etc/disktab
+usr/src/etc/dtab
+usr/src/etc/MAKEDEV
+usr/src/sys/conf/PIDP11
+usr/src/sys/autoconfig/uprobe.c
+usr/src/sys/autoconfig/tcauto.c
+usr/src/sys/autoconfig/Makefile
+/etc/autoconfig

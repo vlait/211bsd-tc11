@@ -1,0 +1,27 @@
+#!/bin/sh
+echo "ready to install, last change to abort!!"
+read n
+sh ./backuptc.sh
+curdir=`pwd`
+(
+cd /	
+tar xvf ${curdir}/tc01.tar
+)
+(cd /dev
+rm /dev/tc0a
+rm /dev/tc1a
+rm /dev/rtc0a
+rm /dev/rtc1a
+./MAKEDEV tc0
+./MAKEDEV tc1
+)
+sh ./buildkernel.sh
+(
+cd /usr/src/sys/autoconfig
+make
+make install
+make clean
+)
+echo
+echo
+echo please reboot to finish the driver addition
